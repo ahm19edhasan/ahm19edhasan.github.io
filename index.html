@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ahmed Abu Hatab — Backend Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0f151d;
+    --panel:#141c26;
+    --border:#25313f;
+    --text:#e4e9ee;
+    --muted:#7c8a99;
+    --amber:#e0a548;
+    --teal:#4fb3a6;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"IBM Plex Sans",-apple-system,sans-serif;
+    line-height:1.65;
+    padding:calc(env(safe-area-inset-top,0px)) 0 calc(60px + env(safe-area-inset-bottom,0px));
+  }
+  a{color:var(--teal);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px;}
+
+  header.hero{padding:72px 0 48px;border-bottom:1px solid var(--border);}
+  .kicker{
+    font-family:"IBM Plex Mono",monospace;
+    color:var(--amber);
+    font-size:0.82rem;
+    margin:0 0 14px;
+  }
+  h1{
+    font-family:"Space Grotesk",sans-serif;
+    font-weight:700;
+    font-size:2.4rem;
+    margin:0 0 8px;
+    letter-spacing:-0.01em;
+  }
+  .role{
+    font-family:"Space Grotesk",sans-serif;
+    font-size:1.15rem;
+    color:var(--muted);
+    margin:0 0 22px;
+  }
+  .pitch{
+    max-width:60ch;
+    font-size:1.02rem;
+    color:#c7d0d9;
+    margin:0 0 26px;
+  }
+  .links{display:flex;gap:18px;flex-wrap:wrap;font-family:"IBM Plex Mono",monospace;font-size:0.88rem;}
+
+  section{padding:44px 0;border-bottom:1px solid var(--border);}
+  section:last-of-type{border-bottom:none;}
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+    margin:0 0 26px;
+  }
+  .section-head .mark{color:var(--amber);font-family:"IBM Plex Mono",monospace;}
+  h2{
+    font-family:"Space Grotesk",sans-serif;
+    font-size:1.3rem;
+    font-weight:600;
+    margin:0;
+  }
+
+  .about p{max-width:65ch;color:#c7d0d9;}
+
+  .log-entry{
+    display:grid;
+    grid-template-columns:120px 1fr;
+    gap:18px;
+    padding:16px 0;
+    border-top:1px dashed var(--border);
+  }
+  .log-entry:first-of-type{border-top:none;}
+  .log-date{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:0.8rem;
+    color:var(--muted);
+    padding-top:2px;
+  }
+  .log-role{font-weight:500;margin:0 0 4px;}
+  .log-role .company{color:var(--teal);}
+  .log-desc{color:#aab6c2;font-size:0.94rem;margin:0;}
+
+  .projects-grid{display:flex;flex-direction:column;gap:16px;}
+  .project{
+    border:1px solid var(--border);
+    background:var(--panel);
+    padding:18px 20px;
+  }
+  .project-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;}
+  .project-top strong{font-family:"Space Grotesk",sans-serif;font-size:1.02rem;}
+  .project p{margin:8px 0 0;color:#aab6c2;font-size:0.94rem;}
+
+  .skills-group{margin-bottom:18px;}
+  .skills-label{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:0.78rem;
+    color:var(--muted);
+    margin:0 0 10px;
+  }
+  .tags{display:flex;flex-wrap:wrap;gap:8px;}
+  .tag{
+    border:1px solid var(--border);
+    font-family:"IBM Plex Mono",monospace;
+    font-size:0.8rem;
+    padding:4px 10px;
+    color:#c7d0d9;
+  }
+
+  footer{padding:44px 0 0;}
+  footer p{color:var(--muted);font-size:0.9rem;}
+
+  @media (max-width:520px){
+    h1{font-size:1.9rem;}
+    .log-entry{grid-template-columns:1fr;gap:4px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <p class="kicker">// backend engineer, khan yunis, palestine</p>
+    <h1>Ahmed Abu Hatab</h1>
+    <p class="role">Backend Software Engineer</p>
+    <p class="pitch">I build and harden production backend systems — APIs, databases, and the infrastructure underneath them. 4+ years across PHP/Laravel and the Node.js ecosystem, with a recent focus on security auditing and production hardening.</p>
+    <div class="links">
+      <a href="https://github.com/ahm19edhasan" target="_blank" rel="noopener">github.com/ahm19edhasan</a>
+      <a href="https://linkedin.com/in/ahmed-abu-hatab" target="_blank" rel="noopener">linkedin.com/in/ahmed-abu-hatab</a>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="section-head"><span class="mark">01</span><h2>About</h2></div>
+    <p>I'm a backend-focused software engineer working mainly in PHP/Laravel and Node.js (Express, NestJS), with production experience in MySQL, PostgreSQL, MongoDB, Redis, and WebSocket-based systems. Most recently, I led an end-to-end security audit of a NestJS/TypeScript platform — finding and fixing 41 vulnerabilities and hardening it for production. I've shipped backend systems for logistics, marketplace, booking, and EdTech platforms, and I freelance on Upwork alongside contract work.</p>
+  </section>
+
+  <section class="experience">
+    <div class="section-head"><span class="mark">02</span><h2>Experience</h2></div>
+
+    <div class="log-entry">
+      <div class="log-date">2026.05 – 2026.09</div>
+      <div>
+        <p class="log-role">Software Engineer, <span class="company">Linkmark</span></p>
+        <p class="log-desc">End-to-end security audit of a NestJS/TypeScript platform — 41 vulnerabilities fixed, CI dependency scanning added, production deployment hardened.</p>
+      </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-date">2023.06 – 2025.12</div>
+      <div>
+        <p class="log-role">Software Engineer, <span class="company">Lines</span></p>
+        <p class="log-desc">Scalable Laravel backend services and REST APIs for web and mobile clients, with MySQL schema design and query optimization.</p>
+      </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-date">2023.06 – 2023.10</div>
+      <div>
+        <p class="log-role">Software Engineer, <span class="company">NewSolutions</span></p>
+        <p class="log-desc">Laravel application development and database query optimization.</p>
+      </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-date">2023.03 – 2023.06</div>
+      <div>
+        <p class="log-role">Software Engineer, <span class="company">Kayan</span></p>
+        <p class="log-desc">Backend debugging, API endpoint improvements, and performance refactoring.</p>
+      </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-date">2022.08 – 2023.01</div>
+      <div>
+        <p class="log-role">Software Engineer, <span class="company">CyberX</span></p>
+        <p class="log-desc">Backend systems and REST APIs for mobile and web teams; third-party integrations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="section-head"><span class="mark">03</span><h2>Selected projects</h2></div>
+    <div class="projects-grid">
+
+      <div class="project">
+        <div class="project-top"><strong>Ngliat</strong><a href="https://ngliat.com/en" target="_blank" rel="noopener">ngliat.com</a></div>
+        <p>Vehicle logistics platform — multi-role workflows for admins, companies, and drivers, with API endpoints for order and status management.</p>
+      </div>
+
+      <div class="project">
+        <div class="project-top"><strong>Topz</strong><a href="https://topz.app/ar" target="_blank" rel="noopener">topz.app</a></div>
+        <p>Marketplace platform — backend for product listings, user roles, and core marketplace flows.</p>
+      </div>
+
+      <div class="project">
+        <div class="project-top"><strong>Egabh</strong><a href="https://egabh.com" target="_blank" rel="noopener">egabh.com</a></div>
+        <p>EdTech platform — APIs for question posting, teacher offers, course catalog, and enrollment.</p>
+      </div>
+
+      <div class="project">
+        <div class="project-top"><strong>Mrkba</strong><a href="https://mrkba.com/ar" target="_blank" rel="noopener">mrkba.com</a></div>
+        <p>Recurring trip booking — scheduling logic across fixed monthly bookings, with Vue.js dashboards.</p>
+      </div>
+
+      <div class="project">
+        <div class="project-top"><strong>L3bna</strong><a href="https://l3bna.com/ar" target="_blank" rel="noopener">l3bna.com</a></div>
+        <p>Sports facility booking — technical lead for backend delivery and Vue.js integration.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="section-head"><span class="mark">04</span><h2>Skills</h2></div>
+
+    <div class="skills-group">
+      <p class="skills-label">backend</p>
+      <div class="tags">
+        <span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">Node.js</span>
+        <span class="tag">Express</span><span class="tag">NestJS</span><span class="tag">REST APIs</span>
+        <span class="tag">Python (learning)</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <p class="skills-label">data &amp; frontend</p>
+      <div class="tags">
+        <span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span>
+        <span class="tag">Redis</span><span class="tag">Vue.js</span><span class="tag">JavaScript</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <p class="skills-label">tools</p>
+      <div class="tags">
+        <span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Linux</span>
+        <span class="tag">CI/CD</span><span class="tag">AWS</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="section-head"><span class="mark">05</span><h2>Get in touch</h2></div>
+    <p>Reachable through <a href="https://linkedin.com/in/ahmed-abu-hatab" target="_blank" rel="noopener">LinkedIn</a> or <a href="https://github.com/ahm19edhasan" target="_blank" rel="noopener">GitHub</a>.</p>
+  </footer>
+
+</div>
+</body>
+</html>
